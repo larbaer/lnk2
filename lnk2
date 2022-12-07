@@ -1,0 +1,29 @@
+#!/bin/bash
+#  _       _    ____  
+# | |_ __ | | _|___ \ 
+# | | '_ \| |/ / __) |
+# | | | | |   < / __/ 
+# |_|_| |_|_|\_\_____|
+# https://github.com/larbaer
+
+# Clean up: delete all broken links
+# find "$HOME" -xtype l -delete
+
+# Configuration through listing folders you want be linked
+source "$HOME"/.config/lnk2/lnk2.conf
+
+# Get the thing done:
+#	-> links source file to destination if it doesn't exist already
+declare -n dummyArray
+
+for dummyArray in "${interfaceArray[@]}"; do
+	if [ -d "${dummyArray[sour]}" ]
+	then
+		for file in "${dummyArray[sour]}"/*; do
+			if ! [ -e "${dummyArray[dest]}"/"${file##*/}" ]
+			then
+				ln -s "$file" "${dummyArray[dest]}"
+			fi
+		done
+	fi
+done
