@@ -1,9 +1,9 @@
-#  _       _    ____       _            
-# | |_ __ | | _|___ \   __| | ___   ___ 
-# | | '_ \| |/ / __) | / _` |/ _ \ / __|
-# | | | | |   < / __/ | (_| | (_) | (__ 
-# |_|_| |_|_|\_\_____(_)__,_|\___/ \___|
-# https://github.com/larbaer
+ _       _    ____       _            
+| |_ __ | | _|___ \   __| | ___   ___ 
+| | '_ \| |/ / __) | / _` |/ _ \ / __|
+| | | | |   < / __/ | (_| | (_) | (__ 
+|_|_| |_|_|\_\_____(_)__,_|\___/ \___|
+https://github.com/larbaer
 
 Die Idee:
 	Dieses Script kann benutzt werden um Backups zu vereinfachen. Hierzu werden von einem wahlweise zentralem 
@@ -24,8 +24,8 @@ Einrichtung:
 		-> wenn das Element aus dem Quellverz. am Ziel nicht existiert wird es dort symbolisch verlinkt
 
 Automatisierung:
-	- ein regelmaessiges Aufrufen des Scriptes kann zum Beispiel durch die Deklaration eines crontab eintrags
-	erfolgen, commandline Befehl fuer einen minuetlichen Aufruf ist:
+	-> ein regelmaessiges Aufrufen des Scriptes kann zum Beispiel durch crontab erfolgen
+	-> commandline Befehl fuer einen minuetlichen Aufruf ist:
 	
 	$ crontab -e
 
