@@ -1,10 +1,3 @@
- _       _    ____       _            
-| |_ __ | | _|___ \   __| | ___   ___ 
-| | '_ \| |/ / __) | / _` |/ _ \ / __|
-| | | | |   < / __/ | (_| | (_) | (__ 
-|_|_| |_|_|\_\_____(_)__,_|\___/ \___|
-https://github.com/larbaer
-
 Die Idee:
 	Dieses Script kann benutzt werden um Backups zu vereinfachen. Hierzu werden von einem wahlweise zentralem 
 	Speicherverzeichnis aus symbolische Links auf das System verteilt. Wodurch sich die Verzeichnisstruktur die
